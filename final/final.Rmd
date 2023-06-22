@@ -25,7 +25,7 @@ urlcolor: blue
 fontsize: 12pt
 biblio-style: apalike
 abstract: |
-  Bu bölümde çalışmanızın özetini yazınız.
+  
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
@@ -67,14 +67,14 @@ Analize ait R kodları bu bölümde başlamalıdır. Bu bölümde veri setini R'
 ```{r}
 library(tidyverse)
 library(here)
-survey <- read_csv(here("../data/survey.csv"))
+survey <- read_csv("https://raw.githubusercontent.com/fatihyrr/final2/main/data/%C3%B6dev1.csv")
 ```
 
 Rmd dosyasında kod bloklarının bazılarında kod seçeneklerinin düzenlendiğine dikkat edin. 
 
 ```{r, echo=FALSE}
 library(xtable) 
-# devtools::install_github("emraher/summarytools")
+# devtools::install_github("fatihyrr/summarytools")
 library(summarytools)
 st_options(lang = "tr")
 ```
@@ -83,7 +83,7 @@ st_options(lang = "tr")
 
 ```{r results='asis', echo=FALSE}
 survey %>%
-  select("sex", "credits", "handedness", "height", "handspan") %>% 
+  select("Province","ikibindokuz", "ikibinon", "ikibinonbir", "ikibinoniki","ikibinonüç","ikibinondört","ikibinonbeş","ikibinonaltı","ikibinonyedi","ikibinonsekiz","ikibinondokuz","ikibinyirmi","ikibinyirmibir","ikibinyirmiiki") %>% 
   descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
   xtable(caption = "Özet İstatistikler",
          label = "tab:ozet",
@@ -106,11 +106,16 @@ Bu bölümde analize ilişkin farklı tablolar ve grafiklere yer verilmelidir. �
 
 ```{r plot, fig.align='center', fig.cap='Muhteşem Bir Grafik'}
 survey %>% 
-  ggplot(aes(x = handedness, y = handspan)) +
+   ggplot(aes(x = ikibindokuz, y = ikibinyirmiiki)) +
   geom_point() +
   geom_smooth() +
-  scale_x_continuous("Handedness") + 
-  scale_y_continuous("Handspan")
+  scale_x_continuous("ikibindokuz")+  
+  scale_y_continuous("ikibinyirmiiki")
+
+ggplot(survey) +
+  aes(x =ikibinyirmiiki, ) +
+  geom_histogram()
+
 ```
 
 
