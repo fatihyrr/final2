@@ -83,6 +83,8 @@ survey %>%
 
 # Yöntem ve Veri Analizi
 
+
+
 Bu çalışmamda öncelikle kullandığım veri seti üzerinden elde ettiğim değişkenler arasında histogram, nokta ve çizgi grafikleri oluşturdum. Grafiklerde analizini yapmış olduğum değişkenler arasında doğrusal bir ilişki olduğunu ortaya koydum .Bu da bizi evlenme sayılarının yıldan yıla büyük bir değişme uğramadığını gösterirdir.
 
 Yaptığım regresyon analizi, "ikibinondokuz" değişkenini "ikibinyirmiiki" değişkenine bağlamak için yapılmıştır. Analiz sonuçlarına göre, regresyon denklemi "ikibinondokuz = 26.6227 + ikibinyirmiiki * 0.9405" şeklindedir. Bu denklem, "ikibinyirmiiki" değişkenindeki her bir birimlik artışın, "ikibinondokuz" değişkeninde 0.9405 birimlik artışla ilişkili olduğunu göstermektedir.Bu regresyon analizi, "ikibinondokuz" değişkenini "ikibinyirmiiki" değişkenine bağlayan bir doğrusal ilişki modelini ifade ediyor.
@@ -133,6 +135,9 @@ print(equation)
 
 
 # Sonuç
+
+
+
 Veri setimizi incelediğimizde karşılaştığımız tablo ülkemizin büyük şehirlerinde artan nüfusa oranla evlenme sayılarının giderek düştüğü aşikâr bir gerçektir. Her ne kadar ülkemizin batı kesiminde evlenme sayıları düşüş eğiliminde olsa bile ülkemizin doğusunda artış meydana gelmekte devam etmektedir. Yaptığım araştırmalarda bunların temel sebeplerinin Bölgelerimizde İklim şartları, Kültür, ailelerin yaşam tarzları, önemli toplumsal olaylardır. Buna örnek olarak CoV id -19 salgını döneminde tüm dünyada yaşanan ekonomik sıkıntılar ve ekonomik sıkıntıların bizim ülkemizde devam etmesi evlenme sayılarını etkilemiştir. Bende pandeminin gerçekleştiği 2019 -2022 yılları arasında bu sayıları nasıl değiştiği ele aldım ve regresyon analizi yaptım Bu regresyon analizi, "ikibinondokuz" değişkenini "ikibinyirmi" değişkenine bağlayan bir doğrusal ilişki olduğunu ortaya koydum 
 
 \newpage
