@@ -1,7 +1,7 @@
 ---
 title: "Çalışmanızın Başlığı"
 author: 
-  - İsim Soyisim[^1]
+  - Fatih Yarar[^1]
 bibliography: ../bibliography/biblio.bib
 csl: ../csl/apa-tr.csl
 header-includes:
@@ -47,13 +47,11 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 \colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
 
 # Giriş
-Bu taslak size proje ödevinizi yazarken yardımcı olması amacıyla oluşturulmuştur. Ödevlerinizde, makalelerinizde, sunumlarınızda ve projelerinizde kullandığınız tüm bilgi kaynaklarına atıfta bulunmalısınız. Alıntı ve gönderme yapmak okuyuculara çalışmanızda kullandığınız/başvurduğunuz  kaynaklara ulaşma imkanı sağlar. **Her ne kadar kendi sözlerinizi kullanıyor olsanız da, başkalarına ait fikirleri çalışmanızda aktarıyorsanız bu fikirlerin kaynağını belgelemek zorundasınız. Aksi takdirde akademik intihal yapmış olursunuz.** Yazım konusunda @aydinonat:2007'ye başvurabilirsiniz. 
-
-
-Proje ödevinizde yer alan başlıkların bu metinde yer alan başlıkları kesinlikle içermesi gerekmektedir. Burada kullanılan başlıklar haricinde farklı alt başlıklar da kullanabilirsiniz. Projenizi yazarken bu dosyayı taslak olarak kullanıp içeriğini projenize uyarlayınız.
-
+Türkiye nüfusunun çoğunluğu evlilik kurumuna önem veren bir topluluktur. Türk kültüründe toplumun temel yapı taşlarından biridir ve genellikle sosyal bağların kuvvetlendirildiği bir araçtır. Ancak son yıllara baktığımızda Türkiye’de evlilik yaşının yükseldiği de aşikardır Türkiye'de evlilik yaşının yükselmesi ve evliliklerin ertelenmesi eğilimi görülmektedir. Türkiye genç bir nüfusa sahip bir ülkedir, bu genç nüfusun eğitimine ve kariyer hedeflerine daha fazla odaklanmasından kaynaklanmaktadır. Kadınlarında işgücü katılımının artması evlilik yaşının yükselmesine sebep olan etkenlerden biridir. Türkiye’de evlilik sayıları yıllara göre değişiklik göstermektedir. Bu değişiklikler çeşitli faktörlerden etkilenebilir, örneğin ekonomik durum, eğitim seviyesi, kadınların işgücüne katılımı, kültürel değişimler ve demografik faktörler gibi etmenler rol oynayabilir. (@ccobanouglu2021turkiye) Ankara, İstanbul, İzmir gibi büyükşehirlere baktığımızda evlilik sayılarının nüfusa oranla bir azalma olduğunu görmekteyiz buralarda nüfus artarken evlenme sayıları hemen hemen aynı kalmıştır. Diğer yandan Türkiye’nin doğu kesime baktığımızda genel olarak orada da evlilik sayılarının arttığını görmekteyiz. Bunun sebepleri olarak da o bölgede doğurganlığın fazla olması (bir çiftin 5,6 çocuğunun olması) gibi etkenler sayılabilir. Bunlara ek olarak insanlar değişen dünyaya ayak uydurarak nikahsız yaşamaya başlaması, artan ekonomik problemler yüzünden evlenmeden sevgili ve flört şeklinde yaşaması bu sayılarda değişkenlik yaşanmasına sebep olmuştur. Ben bu çalışmamda TÜİK’in 2009-2022 yılları arasında Türkiye’de illere ve yıllara göre evlilik sayıları veri setini kullanarak evlilik sayısında yaşanan değişimleri gözlemleyip analiz edeceğim.
 ## Çalışmanın Amacı
-Bu bölümde yaptığınız çalışmanın amacından ve öneminden birkaç paragraf ile bahsediniz.
+
+2009 -2022 yılları arasında Türkiyede iller göre evlenme sayılarının göre değişimlerini analiz edebilmeyi konu edinmiştir.
+Türkiye son 13 yılda illere evlenme sayılarının hangi yönde ilerlediği, Bireysel gibi görünse de evlenme sayılarının toplumsal olaylardan etkilenip etkilenmediğini, etkilendiyse nasıl etkilendiğini istatistiksel yöntemlere başvurarak, sosyodemografik açıdan incelemeyi ve sebeplerini kaynaklar ve veriler doğrultusunda istatiksel analiz yapabilmeyi amaçlanmaktadır .
 
 ## Literatür 
 
@@ -68,6 +66,7 @@ Analize ait R kodları bu bölümde başlamalıdır. Bu bölümde veri setini R'
 library(tidyverse)
 library(here)
 survey <- read_csv("https://raw.githubusercontent.com/fatihyrr/final2/main/data/%C3%B6dev1.csv")
+
 ```
 
 Rmd dosyasında kod bloklarının bazılarında kod seçeneklerinin düzenlendiğine dikkat edin. 
